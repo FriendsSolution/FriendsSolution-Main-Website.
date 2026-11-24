@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b2d61">
+<meta name="description" content="FriendsSolution — social and everyday apps designed to connect people and make useful tools accessible.">
+<title>FriendsSolution | Social & Everyday Apps</title>
+<style>
+:root{--navy:#0b2d61;--blue:#1268d6;--sky:#eaf5ff;--orange:#ff8a00;--gold:#ffd447;--ink:#172b4d;--muted:#5b6b82;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,system-ui,sans-serif;color:var(--ink);background:#f7fbff;line-height:1.55}
+a{color:inherit}header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #dbe8f6}
+.nav{max-width:1160px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 20px}.logo{width:50px;height:50px;object-fit:contain;border-radius:12px}.brand{font-weight:900;color:var(--navy);font-size:18px;line-height:1.1}.brand small{display:block;font-weight:600;color:#5b6b82;font-size:11px;margin-top:4px}.links{margin-left:auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}.links a{text-decoration:none;font-weight:700;font-size:13px;color:#324967}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;border:0;box-shadow:0 6px 16px #ff8a0035}.btn.blue{background:var(--blue);box-shadow:0 6px 16px #1268d635}.btn.light{background:white;color:var(--navy);border:1px solid #d2e4f6;box-shadow:none}
+main{overflow:hidden}.hero{background:radial-gradient(circle at 85% 15%,#2c8cff 0,transparent 28%),linear-gradient(130deg,#082655,#0c4da3 62%,#1686ed);color:white;padding:70px 20px 60px}.hero-inner{max-width:1160px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}.eyebrow{display:inline-block;background:#ffffff1b;border:1px solid #ffffff44;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:800;letter-spacing:.3px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.03;margin:20px 0 18px;letter-spacing:-1.7px}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;max-width:620px;color:#e4f2ff}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.checks{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;font-size:13px;color:#e4f2ff}.checks span{background:#ffffff13;padding:7px 10px;border-radius:8px}.hero-card{background:#ffffff13;border:1px solid #ffffff38;border-radius:28px;padding:22px;box-shadow:0 24px 65px #00183f55;transform:rotate(1deg)}.app-screen{background:white;border-radius:20px;padding:18px;color:var(--ink)}.screen-head{display:flex;align-items:center;gap:10px;border-bottom:1px solid #e5edf5;padding-bottom:13px}.screen-head img{width:42px;height:42px}.screen-head strong{color:var(--navy)}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.mini{background:#f0f7ff;border:1px solid #dcecff;border-radius:13px;padding:14px;min-height:94px}.mini b{display:block;margin-top:5px}.emoji{font-size:24px}.section{max-width:1160px;margin:auto;padding:66px 20px}.section-head{text-align:center;max-width:740px;margin:0 auto 34px}.section-head .kicker{font-weight:900;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.section h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:8px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e0ebf5;border-radius:18px;padding:23px;box-shadow:0 8px 26px #143b6410}.card .icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:#e7f3ff;font-size:24px}.card h3{margin:13px 0 5px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:14px}.everyday{background:linear-gradient(180deg,#eaf5ff,#f7fbff)}.pill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.pill{display:flex;align-items:center;gap:13px;background:white;border:1px solid #dce9f6;border-radius:15px;padding:16px}.pill span{font-size:27px}.pill strong{display:block;color:var(--navy)}.pill small{color:var(--muted)}.community{background:white}.community-banner{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;background:linear-gradient(120deg,#0b2d61,#1478db);border-radius:24px;color:white;padding:32px}.community-banner h2{color:white;margin-top:0}.community-banner p{color:#e1efff}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric{background:#ffffff16;border:1px solid #ffffff36;border-radius:15px;padding:18px}.metric strong{display:block;font-size:26px;color:var(--gold)}.metric small{color:#e1efff}.cta-section{text-align:center;background:#fff7e8}.cta-section p{max-width:650px;margin:0 auto 24px;color:var(--muted)}footer{background:#061c43;color:#d7e7ff;padding:35px 20px}.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-brand{display:flex;gap:12px;align-items:center}.footer-brand img{width:52px;height:52px}.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:13px;color:#d7e7ff}.copyright{max-width:1160px;margin:22px auto 0;padding-top:15px;border-top:1px solid #ffffff25;font-size:12px;color:#b9cbe2}
+@media(max-width:800px){.links{display:none}.hero-inner{grid-template-columns:1fr}.hero{padding-top:48px}.hero-card{max-width:560px}.grid{grid-template-columns:1fr 1fr}.pill-grid{grid-template-columns:1fr 1fr}.community-banner{grid-template-columns:1fr}.section{padding:48px 16px}}
+@media(max-width:500px){.grid,.pill-grid{grid-template-columns:1fr}.hero h1{font-size:42px}.nav{padding:9px 13px}.brand{font-size:16px}.hero p{font-size:16px}.hero-card{padding:12px}.section{padding:42px 14px}}
+</style>
+</head>
+<body>
+<header><nav class="nav">
+<img class="logo" src="assets/friends-solution-logo.png" alt="Friends Solution logo">
+<div class="brand">FriendsSolution<small>Social & Everyday Apps</small></div>
+<div class="links"><a href="#about">About</a><a href="#features">Features</a><a href="#everyday">Everyday Apps</a><a href="#community">Community</a><a href="#contact">Contact</a></div>
+<a class="btn blue" href="#apps">Explore Apps</a>
+</nav></header>
+<main>
+<section class="hero" id="about"><div class="hero-inner">
+<div>
+<span class="eyebrow">✦ Social & everyday apps</span>
+<h1>A place where <span>everyone</span> belongs.</h1>
+<p>FriendsSolution brings social experiences and useful everyday tools together. We aim to make digital services welcoming, accessible and easier to use across devices and languages.</p>
+<div class="cta"><a class="btn" href="#apps">Explore our apps ↗</a><a class="btn light" href="#features">See what's inside</a></div>
+<div class="checks"><span>✓ Designed for mobile</span><span>✓ Accessibility-minded</span><span>✓ Multilingual-ready</span></div>
+</div>
+<div class="hero-card"><div class="app-screen">
+<div class="screen-head"><img src="assets/friends-solution-logo.png" alt=""><div><strong>FriendsSolution</strong><br><small>One home for useful digital tools</small></div></div>
+<div class="mini-grid">
+<div class="mini"><span class="emoji">💬</span><b>Messaging</b><small>Connect and chat</small></div>
+<div class="mini"><span class="emoji">👥</span><b>Groups</b><small>Bring people together</small></div>
+<div class="mini"><span class="emoji">🗓️</span><b>Events</b><small>Plan and share</small></div>
+<div class="mini"><span class="emoji">🧰</span><b>Everyday tools</b><small>Useful apps in one place</small></div>
+</div>
+</div></div>
+</div></section>
+<section class="section" id="features"><div class="section-head"><div class="kicker">What you can do</div><h2>One home for the way people connect.</h2><p>Explore ideas for sharing, talking, planning and finding useful tools, with clear layouts designed to be easy to navigate.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">📰</div><h3>Personal Feed</h3><p>A place to discover updates and share what matters to you.</p></article>
+<article class="card"><div class="icon">💬</div><h3>Messaging</h3><p>Plan for one-to-one and group conversations in a friendly interface.</p></article>
+<article class="card"><div class="icon">👥</div><h3>Groups</h3><p>Bring neighbours, friends and people with shared interests together.</p></article>
+<article class="card"><div class="icon">📅</div><h3>Events</h3><p>Organize gatherings, invitations and shared plans.</p></article>
+<article class="card"><div class="icon">🙋</div><h3>Profiles</h3><p>Give people a simple space to present themselves and their interests.</p></article>
+<article class="card"><div class="icon">♿</div><h3>Accessibility</h3><p>Readable text, strong contrast and reduced visual motion are important design goals.</p></article>
+</div></section>
+<section class="section everyday" id="everyday"><div class="section-head"><div class="kicker">Everyday apps</div><h2>More than social. Useful tools for every day.</h2><p>A growing collection of practical tools that can be explored and developed under the FriendsSolution brand.</p></div>
+<div class="pill-grid" id="apps">
+<div class="pill"><span>🧮</span><div><strong>Friends Calculator</strong><small>Quick calculations</small></div></div>
+<div class="pill"><span>🗓️</span><div><strong>Calendar</strong><small>Plans and reminders</small></div></div>
+<div class="pill"><span>📝</span><div><strong>Notes</strong><small>Keep useful notes</small></div></div>
+<div class="pill"><span>🌦️</span><div><strong>Weather</strong><small>Local forecast tools</small></div></div>
+<div class="pill"><span>📖</span><div><strong>Dictionary</strong><small>Look up words</small></div></div>
+<div class="pill"><span>💰</span><div><strong>Budget</strong><small>Track spending</small></div></div>
+<div class="pill"><span>🗺️</span><div><strong>FRIENDS MAP</strong><small>Map and location prototype</small></div></div>
+<div class="pill"><span>🎨</span><div><strong>Social Post Maker</strong><small>Create branded post designs</small></div></div>
+<div class="pill"><span>🧰</span><div><strong>Friends Tools</strong><small>Small utilities in one place</small></div></div>
+</div>
+</section>
+<section class="section community" id="community"><div class="community-banner">
+<div><div class="kicker" style="color:#ffd447">Built for everyone</div><h2>A community from every corner of society.</h2><p>Our vision is to make digital experiences more approachable, inclusive and useful. We welcome feedback as FriendsSolution grows.</p><a class="btn" href="#contact">Get in touch</a></div>
+<div class="metrics"><div class="metric"><strong>Inclusive</strong><small>Clear, welcoming design</small></div><div class="metric"><strong>Multilingual</strong><small>Language-friendly experiences</small></div><div class="metric"><strong>Mobile-ready</strong><small>Designed for small screens</small></div><div class="metric"><strong>Growing</strong><small>More tools over time</small></div></div>
+</div></section>
+<section class="section cta-section" id="contact"><div class="section-head"><div class="kicker">Get started</div><h2>Explore FriendsSolution.</h2><p>Have a question, idea or suggestion? Contact FriendsSolution and follow along as more tools and apps are added.</p><a class="btn blue" href="mailto:friendsbook121212@gmail.com?subject=FriendsSolution%20Website%20Enquiry">Contact FriendsSolution ✉</a></div></section>
+</main>
+<footer><div class="footer-inner"><div class="footer-brand"><img src="assets/friends-solution-logo.png" alt=""><div><strong>FriendsSolution</strong><br><small>Social & Everyday Apps</small></div></div><div class="footer-links"><a href="#about">About</a><a href="#features">Features</a><a href="#everyday">Everyday Apps</a><a href="#contact">Contact</a></div></div><div class="copyright">© <span id="year"></span> FriendsSolution. Developed by Friends Solution, Bhubaneswar, Odisha.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
